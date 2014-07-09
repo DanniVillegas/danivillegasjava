@@ -1,0 +1,100 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package persona;
+
+/**
+ *
+ * @author dehivix
+ */
+public class Persona {
+ 
+    // lista de atributos que la definen
+    private String Nombre;
+    private String Apellido;
+    private String Documento;
+    
+    private int Peso;
+    private String Ojos;
+    private char Sexo;
+ 
+    public String getApellido() {
+        return Apellido;
+    }
+ 
+    public void setApellido(String Apellido) {
+        this.Apellido = Apellido;
+    }
+ 
+    public String getDocumento() {
+        return Documento;
+    }
+ 
+    public void setDocumento(String Documento) {
+        this.Documento = Documento;
+    }
+ 
+    public String getNombre() {
+        return Nombre;
+    }
+ 
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+ 
+    public String getOjos() {
+        return Ojos;
+    }
+ 
+    public void setOjos(String Ojos) {
+        this.Ojos = Ojos;
+    }
+ 
+    public int getPeso() {
+        return Peso;
+    }
+ 
+    public void setPeso(int Peso) {
+        this.Peso = Peso;
+    }
+ 
+    public char getSexo() {
+        return Sexo;
+    }
+ 
+    public void setSexo(char Sexo) {
+        this.Sexo = Sexo;
+    }
+ 
+    // metodo para poder ejecutar la clase en Java (irrelevante para el concepto estudiado)
+    public static void main(String[] args) {
+        // instancia de la clase persona
+        // el nombre del objeto debe ser distinto que el nombre de su clase,
+        // puede tener cualquiera que querramos
+        Persona persona = new Persona();
+ 
+        // asignaci?n de valores al objeto
+        persona.setNombre("Linus");
+        persona.setApellido("Torvals");
+        persona.setDocumento("777");
+        persona.setPeso(80);
+        persona.setOjos("Azul");
+        persona.setSexo('M');
+ 
+        // instancia de la clase persona
+        Persona otraPersona = new Persona();
+ 
+        // asignaci?n de valores al objeto
+        otraPersona.setNombre("Winona");
+        otraPersona.setApellido("Raider");
+        otraPersona.setDocumento("666");
+        otraPersona.setPeso(65);
+        otraPersona.setOjos("Marrones");
+        otraPersona.setSexo('F');
+ 
+        // listado
+        System.out.println("La primer persona es: " + persona.getNombre() + " " + persona.getApellido());
+        System.out.println("La segunda persona es: " + otraPersona.getNombre() + " " + otraPersona.getApellido());
+    }
+}
